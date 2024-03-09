@@ -7,7 +7,7 @@ int main()
 {
     int playernum, specialoption, checkwin = 1;
     char turn = p1.letter;
-
+    
     printgrid();
     printf("WELCOLME TO 5 x 5 TIC TAC TOE\n");
     printf("\n1 : EXIT GAME || 2 : TWO PLAYERS || 3 : THREE PLAYERS\n");
@@ -16,7 +16,7 @@ int main()
     {
         printf("INVALID INPUT\n");
         playernum = getcommand();
-    }
+    }asdfoaisdjufaslkdjfalskdjfaskildufkusd
     if (playernum == 2)
     {
         printf("\nACTIVATE SPECIAL ABILITIES?\n");
