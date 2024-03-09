@@ -16,7 +16,7 @@ int main()
     {
         printf("INVALID INPUT\n");
         playernum = getcommand();
-    }asdfoaisdjufaslkdjfalskdjfaskildufkusd
+    }
     if (playernum == 2)
     {
         printf("\nACTIVATE SPECIAL ABILITIES?\n");
