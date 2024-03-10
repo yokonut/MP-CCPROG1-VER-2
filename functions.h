@@ -165,7 +165,7 @@ void changecell(char *turn, int playernum, int specialoption)
         }
         else
         {
-            printf("\n1 : REMOVE 1 CELL || 2 : REMOVE A COLUMN,ROW, or CORNERS\n");
+            printf("\n1 : ERASE A SPACE || 2 : ERASE 5 SPACES\n");
             specialmove = getcommand();
             // SWITCH FOR CHOOSING REMOVE 1 OR REMOVE 5 OR CORNER
             switch (specialmove)
