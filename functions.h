@@ -3,11 +3,11 @@ int getcommand()
 {
 
     int cmd;
-  
+
     printf("\nENTER COMMAND: ");
     scanf("%d", &cmd);
 
-    return  cmd;
+    return cmd;
 }
 
 void removeability()
@@ -129,7 +129,6 @@ void printturn(char turn)
     printf("\nMAKE YOUR MOVE PLAYER %c\n", turn);
 }
 
-
 void changeturn(char *turn, int playernum)
 {
     if (playernum == 2)
@@ -178,104 +177,229 @@ void changecell(char *turn, int playernum, int specialoption)
                 switch (remove1)
                 {
                 case 1:
-                    cell01 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell01 != *turn)
+                    {
+                        cell01 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 2:
-                    cell02 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell02 != *turn)
+                    {
+                        cell02 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 3:
-                    cell03 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell03 != *turn)
+                    {
+                        cell03 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 4:
-                    cell04 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell04 != *turn)
+                    {
+                        cell04 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 5:
-                    cell05 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell05 != *turn)
+                    {
+                        cell05 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 6:
-                    cell06 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell06 != *turn)
+                    {
+                        cell06 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 7:
-                    cell07 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell07 != *turn)
+                    {
+                        cell07 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 8:
-                    cell08 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell08 != *turn)
+                    {
+                        cell08 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 9:
-                    cell09 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell09 != *turn)
+                    {
+                        cell09 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 10:
-                    cell10 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell10 != *turn)
+                    {
+                        cell10 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 11:
-                    cell11 = ' ';
-                    changeturn(turn, playernum);
+                   if (cell11 != *turn)
+                    {
+                        cell11 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 12:
-                    cell12 = ' ';
-                    changeturn(turn, playernum);
-                    break;
+                    if (cell12 != *turn)
+                    {
+                        cell12 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
+                    break;;
                 case 13:
-                    cell13 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell13 != *turn)
+                    {
+                        cell13 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 14:
-                    cell14 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell14 != *turn)
+                    {
+                        cell14 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 15:
-                    cell15 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell15 != *turn)
+                    {
+                        cell15 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 16:
-                    cell16 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell16 != *turn)
+                    {
+                        cell16 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 17:
-                    cell17 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell17 != *turn)
+                    {
+                        cell17 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 18:
-                    cell18 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell18 != *turn)
+                    {
+                        cell18 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 19:
-                    cell19 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell19 != *turn)
+                    {
+                        cell19 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 20:
-                    cell20 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell20 != *turn)
+                    {
+                        cell20 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 21:
-                    cell21 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell21 != *turn)
+                    {
+                        cell21 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 22:
-                    cell22 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell22 != *turn)
+                    {
+                        cell22 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 23:
-                    cell23 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell23 != *turn)
+                    {
+                        cell23 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 24:
-                    cell24 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell24 != *turn)
+                    {
+                        cell24 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 25:
-                    cell25 = ' ';
-                    changeturn(turn, playernum);
+                    if (cell25 != *turn)
+                    {
+                        cell25 = ' ';
+                        changeturn(turn, playernum);
+                    }
+                    else
+                        printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 default:
                     printf("INVALID INPUT\n");
@@ -285,49 +409,49 @@ void changecell(char *turn, int playernum, int specialoption)
                 // SEPCIAL ABILITY TO BE USED ONLY ONCE
                 // CASE 2 TO CHOOSE COLUMN,ROW, OR CORNERS
             case 2:
-                
-                    if (*turn == p1.letter && p1.special == 1)
-                    {
-                        removeability();
-                        if (*turn == p1.letter)
-                            p1.special--;
-                        if (*turn == p2.letter)
-                            p2.special--;
-                        if (*turn == p3.letter)
-                            p3.special--;
-                        changeturn(turn, playernum);
 
-                        break;
-                    }
-                    else if (*turn == p2.letter && p2.special == 1)
-                    {
-                        removeability();
-                        if (*turn == p1.letter)
-                            p1.special--;
-                        if (*turn == p2.letter)
-                            p2.special--;
-                        if (*turn == p3.letter)
-                            p3.special--;
-                        changeturn(turn, playernum);
-                        break;
-                    }
-                    else if (*turn == p3.letter && p3.special == 1)
-                    {
-                        removeability();
-                        if (*turn == p1.letter)
-                            p1.special--;
-                        if (*turn == p2.letter)
-                            p2.special--;
-                        if (*turn == p3.letter)
-                            p3.special--;
-                        changeturn(turn, playernum);
-                        break;
-                    }
-                    else {
-                        printf("\nPLAYER %c HAS NO MORE ABILITIES LEFT", *turn);
-                        break;
-                    }
-                 
+                if (*turn == p1.letter && p1.special == 1)
+                {
+                    removeability();
+                    if (*turn == p1.letter)
+                        p1.special--;
+                    if (*turn == p2.letter)
+                        p2.special--;
+                    if (*turn == p3.letter)
+                        p3.special--;
+                    changeturn(turn, playernum);
+
+                    break;
+                }
+                else if (*turn == p2.letter && p2.special == 1)
+                {
+                    removeability();
+                    if (*turn == p1.letter)
+                        p1.special--;
+                    if (*turn == p2.letter)
+                        p2.special--;
+                    if (*turn == p3.letter)
+                        p3.special--;
+                    changeturn(turn, playernum);
+                    break;
+                }
+                else if (*turn == p3.letter && p3.special == 1)
+                {
+                    removeability();
+                    if (*turn == p1.letter)
+                        p1.special--;
+                    if (*turn == p2.letter)
+                        p2.special--;
+                    if (*turn == p3.letter)
+                        p3.special--;
+                    changeturn(turn, playernum);
+                    break;
+                }
+                else
+                {
+                    printf("\nPLAYER %c HAS NO MORE ABILITIES LEFT", *turn);
+                    break;
+                }
 
             default:
                 printf("\nINVALID INPUT\n");
