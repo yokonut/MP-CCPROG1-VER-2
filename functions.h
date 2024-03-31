@@ -153,7 +153,7 @@ void changeturn(char *turn, int playernum)
 void changecell(char *turn, int playernum, int specialoption)
 {
     int move = getcommand();
-    int specialmove, remove1, remove5, removecol, removerow;
+    int specialmove, remove1;
 
     switch (move)
     {
@@ -774,57 +774,57 @@ void gameover(char turn, int *checkwin)
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell06 == turn && cell07 == turn && cell08 == turn && cell09 == turn & cell10 == turn)
+    else if (cell06 == turn && cell07 == turn && cell08 == turn && cell09 == turn & cell10 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell11 == turn && cell12 == turn && cell13 == turn && cell14 == turn & cell15 == turn)
+    else if (cell11 == turn && cell12 == turn && cell13 == turn && cell14 == turn & cell15 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell16 == turn && cell17 == turn && cell18 == turn && cell19 == turn & cell20 == turn)
+    else if (cell16 == turn && cell17 == turn && cell18 == turn && cell19 == turn & cell20 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell21 == turn && cell22 == turn && cell23 == turn && cell24 == turn & cell25 == turn)
+    else if (cell21 == turn && cell22 == turn && cell23 == turn && cell24 == turn & cell25 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell01 == turn && cell06 == turn && cell11 == turn && cell16 == turn & cell21 == turn)
+    else if (cell01 == turn && cell06 == turn && cell11 == turn && cell16 == turn & cell21 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell02 == turn && cell07 == turn && cell12 == turn && cell17 == turn & cell22 == turn)
+    else if (cell02 == turn && cell07 == turn && cell12 == turn && cell17 == turn & cell22 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell03 == turn && cell08 == turn && cell13 == turn && cell18 == turn & cell23 == turn)
+    else if (cell03 == turn && cell08 == turn && cell13 == turn && cell18 == turn & cell23 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell04 == turn && cell09 == turn && cell14 == turn && cell19 == turn & cell24 == turn)
+    else if (cell04 == turn && cell09 == turn && cell14 == turn && cell19 == turn & cell24 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell05 == turn && cell10 == turn && cell15 == turn && cell20 == turn & cell25 == turn)
+    else if (cell05 == turn && cell10 == turn && cell15 == turn && cell20 == turn & cell25 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell05 == turn && cell09 == turn && cell13 == turn && cell17 == turn & cell21 == turn)
+    else if (cell05 == turn && cell09 == turn && cell13 == turn && cell17 == turn & cell21 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
-    if (cell01 == turn && cell07 == turn && cell13 == turn && cell19 == turn & cell25 == turn)
+    else if (cell01 == turn && cell07 == turn && cell13 == turn && cell19 == turn & cell25 == turn)
     {
         printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;

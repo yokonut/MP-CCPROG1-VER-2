@@ -27,4 +27,7 @@ char cell25 = ' ';
 
 char p1 = 'X', p2 = 'O', p3 = 'Y';
 int p1_special =1, p2_special =1,p3_special =1;
+int checkwin = 1;
+int playernum, specialoption;
+char turn = 'X';
 
