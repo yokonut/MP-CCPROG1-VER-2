@@ -6,7 +6,7 @@
 int main()
 {
     int playernum, specialoption, checkwin = 1;
-    char turn = p1.letter;
+    char turn = p1;
     
     printgrid();
     printf("WELCOLME TO 5 x 5 TIC TAC TOE\n");

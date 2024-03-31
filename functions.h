@@ -134,19 +134,19 @@ void changeturn(char *turn, int playernum)
     if (playernum == 2)
     {
 
-        if (*turn == p1.letter)
-            *turn = p2.letter;
+        if (*turn == p1)
+            *turn = p2;
         else
-            *turn = p1.letter;
+            *turn = p1;
     }
     if (playernum == 3)
     {
-        if (*turn == p1.letter)
-            *turn = p2.letter;
-        else if (*turn == p2.letter)
-            *turn = p3.letter;
+        if (*turn == p1)
+            *turn = p2;
+        else if (*turn == p2)
+            *turn = p3;
         else
-            *turn = p1.letter;
+            *turn = p1;
     }
 }
 
@@ -177,7 +177,9 @@ void changecell(char *turn, int playernum, int specialoption)
                 switch (remove1)
                 {
                 case 1:
-                    if (cell01 != *turn)
+                    if (cell01 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell01 != *turn)
                     {
                         cell01 = ' ';
                         changeturn(turn, playernum);
@@ -186,7 +188,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 2:
-                    if (cell02 != *turn)
+                    if (cell02 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell02 != *turn)
                     {
                         cell02 = ' ';
                         changeturn(turn, playernum);
@@ -195,7 +199,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 3:
-                    if (cell03 != *turn)
+                    if (cell03 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell03 != *turn)
                     {
                         cell03 = ' ';
                         changeturn(turn, playernum);
@@ -204,7 +210,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 4:
-                    if (cell04 != *turn)
+                    if (cell04 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell04 != *turn)
                     {
                         cell04 = ' ';
                         changeturn(turn, playernum);
@@ -213,7 +221,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 5:
-                    if (cell05 != *turn)
+                    if (cell05 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell05 != *turn)
                     {
                         cell05 = ' ';
                         changeturn(turn, playernum);
@@ -222,7 +232,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 6:
-                    if (cell06 != *turn)
+                    if (cell06 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell06 != *turn)
                     {
                         cell06 = ' ';
                         changeturn(turn, playernum);
@@ -231,7 +243,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 7:
-                    if (cell07 != *turn)
+                    if (cell07 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell07 != *turn)
                     {
                         cell07 = ' ';
                         changeturn(turn, playernum);
@@ -240,7 +254,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 8:
-                    if (cell08 != *turn)
+                    if (cell08 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell08 != *turn)
                     {
                         cell08 = ' ';
                         changeturn(turn, playernum);
@@ -249,7 +265,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 9:
-                    if (cell09 != *turn)
+                    if (cell09 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell09 != *turn)
                     {
                         cell09 = ' ';
                         changeturn(turn, playernum);
@@ -258,7 +276,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 10:
-                    if (cell10 != *turn)
+                    if (cell10 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell10 != *turn)
                     {
                         cell10 = ' ';
                         changeturn(turn, playernum);
@@ -267,7 +287,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 11:
-                   if (cell11 != *turn)
+                    if (cell11 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell11 != *turn)
                     {
                         cell11 = ' ';
                         changeturn(turn, playernum);
@@ -276,16 +298,21 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 12:
-                    if (cell12 != *turn)
+                    if (cell12 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell12 != *turn)
                     {
                         cell12 = ' ';
                         changeturn(turn, playernum);
                     }
                     else
                         printf("\nCELL IS TAKEN BY YOU\n");
-                    break;;
+                    break;
+                    ;
                 case 13:
-                    if (cell13 != *turn)
+                    if (cell13 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell13 != *turn)
                     {
                         cell13 = ' ';
                         changeturn(turn, playernum);
@@ -294,7 +321,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 14:
-                    if (cell14 != *turn)
+                    if (cell14 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell14 != *turn)
                     {
                         cell14 = ' ';
                         changeturn(turn, playernum);
@@ -303,7 +332,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 15:
-                    if (cell15 != *turn)
+                    if (cell15 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell15 != *turn)
                     {
                         cell15 = ' ';
                         changeturn(turn, playernum);
@@ -312,7 +343,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 16:
-                    if (cell16 != *turn)
+                    if (cell16 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell16 != *turn)
                     {
                         cell16 = ' ';
                         changeturn(turn, playernum);
@@ -321,7 +354,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 17:
-                    if (cell17 != *turn)
+                    if (cell17 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell17 != *turn)
                     {
                         cell17 = ' ';
                         changeturn(turn, playernum);
@@ -330,7 +365,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 18:
-                    if (cell18 != *turn)
+                    if (cell18 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell18 != *turn)
                     {
                         cell18 = ' ';
                         changeturn(turn, playernum);
@@ -339,7 +376,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 19:
-                    if (cell19 != *turn)
+                    if (cell19 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell19 != *turn)
                     {
                         cell19 = ' ';
                         changeturn(turn, playernum);
@@ -348,7 +387,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 20:
-                    if (cell20 != *turn)
+                    if (cell20 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell20 != *turn)
                     {
                         cell20 = ' ';
                         changeturn(turn, playernum);
@@ -357,7 +398,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 21:
-                    if (cell21 != *turn)
+                    if (cell21 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell21 != *turn)
                     {
                         cell21 = ' ';
                         changeturn(turn, playernum);
@@ -366,7 +409,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 22:
-                    if (cell22 != *turn)
+                    if (cell22 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell22 != *turn)
                     {
                         cell22 = ' ';
                         changeturn(turn, playernum);
@@ -375,7 +420,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 23:
-                    if (cell23 != *turn)
+                    if (cell23 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell23 != *turn)
                     {
                         cell23 = ' ';
                         changeturn(turn, playernum);
@@ -384,7 +431,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 24:
-                    if (cell24 != *turn)
+                    if (cell24 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell24 != *turn)
                     {
                         cell24 = ' ';
                         changeturn(turn, playernum);
@@ -393,7 +442,9 @@ void changecell(char *turn, int playernum, int specialoption)
                         printf("\nCELL IS TAKEN BY YOU\n");
                     break;
                 case 25:
-                    if (cell25 != *turn)
+                    if (cell25 == ' ')
+                        printf("\nCELL IS ALREADY EMPTY\n");
+                    else if (cell25 != *turn)
                     {
                         cell25 = ' ';
                         changeturn(turn, playernum);
@@ -410,40 +461,40 @@ void changecell(char *turn, int playernum, int specialoption)
                 // CASE 2 TO CHOOSE COLUMN,ROW, OR CORNERS
             case 2:
 
-                if (*turn == p1.letter && p1.special == 1)
+                if (*turn == p1 && p1_special == 1)
                 {
                     removeability();
-                    if (*turn == p1.letter)
-                        p1.special--;
-                    if (*turn == p2.letter)
-                        p2.special--;
-                    if (*turn == p3.letter)
-                        p3.special--;
+                    if (*turn == p1)
+                        p1_special--;
+                    if (*turn == p2)
+                        p2_special--;
+                    if (*turn == p3)
+                        p3_special--;
                     changeturn(turn, playernum);
 
                     break;
                 }
-                else if (*turn == p2.letter && p2.special == 1)
+                else if (*turn == p2 && p2_special == 1)
                 {
                     removeability();
-                    if (*turn == p1.letter)
-                        p1.special--;
-                    if (*turn == p2.letter)
-                        p2.special--;
-                    if (*turn == p3.letter)
-                        p3.special--;
+                    if (*turn == p1)
+                        p1_special--;
+                    if (*turn == p2)
+                        p2_special--;
+                    if (*turn == p3)
+                        p3_special--;
                     changeturn(turn, playernum);
                     break;
                 }
-                else if (*turn == p3.letter && p3.special == 1)
+                else if (*turn == p3 && p3_special == 1)
                 {
                     removeability();
-                    if (*turn == p1.letter)
-                        p1.special--;
-                    if (*turn == p2.letter)
-                        p2.special--;
-                    if (*turn == p3.letter)
-                        p3.special--;
+                    if (*turn == p1)
+                        p1_special--;
+                    if (*turn == p2)
+                        p2_special--;
+                    if (*turn == p3)
+                        p3_special--;
                     changeturn(turn, playernum);
                     break;
                 }
@@ -720,50 +771,62 @@ void gameover(char turn, int *checkwin)
 {
     if (cell01 == turn && cell02 == turn && cell03 == turn && cell04 == turn & cell05 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell06 == turn && cell07 == turn && cell08 == turn && cell09 == turn & cell10 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell11 == turn && cell12 == turn && cell13 == turn && cell14 == turn & cell15 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell16 == turn && cell17 == turn && cell18 == turn && cell19 == turn & cell20 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell21 == turn && cell22 == turn && cell23 == turn && cell24 == turn & cell25 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell01 == turn && cell06 == turn && cell11 == turn && cell16 == turn & cell21 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell02 == turn && cell07 == turn && cell12 == turn && cell17 == turn & cell22 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell03 == turn && cell08 == turn && cell13 == turn && cell18 == turn & cell23 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell04 == turn && cell09 == turn && cell14 == turn && cell19 == turn & cell24 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell05 == turn && cell10 == turn && cell15 == turn && cell20 == turn & cell25 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell05 == turn && cell09 == turn && cell13 == turn && cell17 == turn & cell21 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
     if (cell01 == turn && cell07 == turn && cell13 == turn && cell19 == turn & cell25 == turn)
     {
+        printf("CONGRATULATIONS YOU WON PLAYER %c", turn);
         *checkwin = 0;
     }
 }

@@ -24,14 +24,7 @@ char cell23 = ' ';
 char cell24 = ' ';
 char cell25 = ' ';
 
-struct player {
-    int special;
-    char letter;
-};
 
-struct player p1 = {1 , 'X'};
-struct player p2 = {1 , 'O'};
-struct player p3 = {1 , 'Y'};
-
-
+char p1 = 'X', p2 = 'O', p3 = 'Y';
+int p1_special =1, p2_special =1,p3_special =1;
 
